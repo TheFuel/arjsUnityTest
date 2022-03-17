@@ -17,11 +17,15 @@ init: function () {
 var elem = document.documentElement;
 var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
+var Cube_1 = document.querySelector("#Cube_1");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
 });
 marker.addEventListener("markerLost", function (evt) {
 markerFound = 0;
+});
+Cube_1.addEventListener("mousedown", function(evt){
+open("https://www.mariku.jp");
 });
 
         fullbutton.addEventListener("click", function (evt) {
