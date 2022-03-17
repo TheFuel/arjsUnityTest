@@ -17,15 +17,11 @@ init: function () {
 var elem = document.documentElement;
 var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
-var Cube_3 = document.querySelector("#Cube_3");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
 });
 marker.addEventListener("markerLost", function (evt) {
 markerFound = 0;
-});
-Cube_3.addEventListener("mousedown", function(evt){
-open("https://www.mariku.jp");
 });
 
         fullbutton.addEventListener("click", function (evt) {
@@ -111,12 +107,10 @@ if (markerFound == 1) {
 <!-- BEGIN: Unity Compiled Objects -->
 <a-box width="0.1" height="0.1" depth="0.1" class="intersectable" position="0 0.143 -0.234" rotation="0 0 0" color="#FFFFFF" 
 ></a-box>
-<a-box width="0.1" height="0.1" depth="0.1" class="intersectable" position="0 0.116 0.122" rotation="0 0 0" color="#FFFFFF" 
+<a-box width="0.1" height="0.1" depth="0.1" class="intersectable" position="0 0.116 0.122" rotation="0 0 0" color="#FF0000" 
 ></a-box>
 <a-sphere radius="0.05" class="intersectable" position="-0.419 0.213 0" rotation="0 0 0" color="#FFFFFF" 
 ></a-sphere>
-<a-box width="0.1" height="0.1" depth="0.1" class="intersectable" position="0 0.127 0.403" rotation="0 0 0" color="#8CC24A" 
-></a-box>
 <!-- END: Unity Compiled Objects -->
 
 <!-- BEGIN: Bottom HTML -->
